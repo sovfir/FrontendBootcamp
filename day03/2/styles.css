@@ -1,0 +1,97 @@
+body {
+  margin: 0; /* Уберет внешние отступы у body */
+  display: flex; /* Используем flexbox для центрирования */
+  justify-content: center; /* Горизонтальное центрирование */
+  align-items: center; /* Вертикальное центрирование */
+  min-height: 100vh; /* Устанавливаем минимальную высоту body для центрирования по вертикали */
+  background-color: black;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  margin: 5px;
+  padding: 5px;
+  background-color: aqua;
+  grid-gap: 3px;
+  height: 60vh;
+  width: 45vh;
+}
+
+button {
+  background-color: white;
+  border: none;
+  color: rgb(131, 129, 129);
+  font-size: 4vh;
+  height: 11vh;
+  width: 11vh;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: lightgray;
+}
+
+button:active {
+  background-color: darkgray;
+}
+
+.screen {
+  display: flex;
+  height: 11vh;
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(131, 129, 129);
+  border-radius: 10px;
+  background-color: whitesmoke;
+  font-size: 4vh;
+  align-items: center;
+  grid-column: span 3;
+  grid-row: span 1;
+  padding-left: 3vh;
+}
+
+#clear {
+  grid-column: 4;
+  grid-row: 1;
+  background-color: red;
+}
+
+#clear:hover {
+  background-color: darkred;
+}
+
+#one {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+#two {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+#three {
+  grid-row: 2;
+  grid-column: 3;
+}
+
+#plus {
+  grid-row: 2;
+  grid-column: 4;
+}
+
+#minus {
+  grid-row: 3;
+  grid-column: 4;
+}
+
+#multi {
+  grid-row: 4;
+  grid-column: 4;
+}
+
+#div {
+  grid-row: 5;
+  grid-column: 1;
+}
